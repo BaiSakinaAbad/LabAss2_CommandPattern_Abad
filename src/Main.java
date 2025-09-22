@@ -3,6 +3,7 @@ import devices.*;
 
 public class Main {
     public static void main(String[] args) {
+        //
         SmartHomeHub hub = new SmartHomeHub();
 
         Light light = new Light();
