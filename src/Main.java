@@ -10,7 +10,7 @@ public class Main {
         MusicPlayer music = new MusicPlayer();
         Aircon aircon = new Aircon();
 
-        // Example usage
+
         hub.setCommand(new TurnOnCommand(light));
         hub.pressButton();
 
@@ -19,6 +19,10 @@ public class Main {
 
         hub.setCommand(new TurnOnCommand(music));
         hub.pressButton();
+
+        MusicPlayer music2 = new MusicPlayer();
+        music2.play("Duvet Playlist");
+
 
         hub.setCommand(new TurnOnCommand(aircon));
         hub.pressButton();
