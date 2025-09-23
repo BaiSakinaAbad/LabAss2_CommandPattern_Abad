@@ -1,7 +1,7 @@
 package devices;
 
 public class Aircon implements Device{
-    private int temperature = 24;
+    private int temperature = 24; //default
 
     @Override
     public void turnOn() {
