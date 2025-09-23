@@ -23,6 +23,12 @@ public class Main {
         MusicPlayer music2 = new MusicPlayer();
         music2.play("Duvet Playlist");
 
+        hub.setCommand(new ChangeVolumeCommand(music, +1));
+        hub.pressButton();
+
+        //hub.setCommand(new ChangeVolumeCommand(music, -1));
+        //hub.pressButton();
+
 
         hub.setCommand(new TurnOnCommand(aircon));
         hub.pressButton();
